@@ -53,9 +53,9 @@ module.exports = [
         "species": "Mixed",
         "birthday": "2008-11-11",
         "favoriteFood": "Pork",
-        "picUrl": "http://via.placeholder.com/350x150",
+        "picUrl": "https://i.imgur.com/USm3WTB.jpeg",
         "price": 9.99,
-        "picUrlSq": "http://via.placeholder.com/250x250",
+        "picUrlSq": "https://i.imgur.com/sfbMB5B.jpg",
         "description": "Santa's Little Helper is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food"
     },
     {
@@ -63,9 +63,9 @@ module.exports = [
         "species": "Alien",
         "birthday": "2008-11-11",
         "favoriteFood": "Cats",
-        "picUrl": "http://via.placeholder.com/350x150",
+        "picUrl": "https://i.imgur.com/USm3WTB.jpeg",
         "price": 59.99,
-        "picUrlSq": "http://via.placeholder.com/250x250",
+        "picUrlSq": "https://i.imgur.com/sfbMB5B.jpg",
         "description": "Alf is an alien and he's a good alien who loves to play and hang out with his owners. He also likes to nap and enjoys eating cats"
     },
     {
@@ -73,9 +73,9 @@ module.exports = [
         "species": "Mastiff",
         "birthday": "2008-11-11",
         "favoriteFood": "Dragon",
-        "picUrl": "http://via.placeholder.com/350x150",
+        "picUrl": "https://i.imgur.com/USm3WTB.jpeg",
         "price": 9.99,
-        "picUrlSq": "http://via.placeholder.com/250x250",
+        "picUrlSq": "https://i.imgur.com/sfbMB5B.jpg",
         "description": "Bubba is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food"
     }
 ]
