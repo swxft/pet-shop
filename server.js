@@ -39,7 +39,12 @@ app.use(cookieParser());
 
 
 require('./routes/index.js')(app);
-require('./routes/pets.js')(app);
+// At the beginning of your main file (index.js or app.js), add:
+const clearModule = require('clear-module');
+
+// Clear the cache for the data file before importing it
+clearModule('./seeds/pets2.js');
+require('./routes/index.js')(app);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
