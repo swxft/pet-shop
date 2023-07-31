@@ -11,6 +11,9 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override')
+// require our mailgun dependencies
+const nodemailer = require('nodemailer');
+const mg = require('nodemailer-mailgun-transport');
 
 const app = express();
 
@@ -21,6 +24,16 @@ mongoose.connect('mongodb://localhost/local', {
   useCreateIndex: true,
   useFindAndModify: false
 });
+
+const auth = {
+  auth: {
+    api_key: process.env.MAILGUN_API_KEY,
+    domain: process.env.EMAIL_DOMAIN
+  }
+}
+
+const nodemailerMailgun = nodemailer.createTransport(mg(auth));
+
 
 // server.js
 app.locals.PUBLIC_STRIPE_API_KEY = process.env.PUBLIC_STRIPE_API_KEY
@@ -65,3 +78,10 @@ app.use((err, req, res, next) => {
 
 
 module.exports = app;
+// SEND EMAIL
+const user = {
+  email: 'YOUR@EMAIL.com',
+  name: 'Emily',
+  age: '43'
+};
+
