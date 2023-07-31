@@ -27,7 +27,10 @@ block content
                 .form-group
                     label Description
                     textarea.form-control(name="description")= pet.description
-                button(type="submit").btn.btn-primary Save
+                .form-group
+                    label Avatar
+                    input.form-control(name="avatar" type="file" value=pet.picUrl)
             .text-right
                 form(action=`/pets/${pet._id}?_method=DELETE`, method="POST")
                     button(type="submit").btn.btn-danger Remove
+            button(type="submit").btn.btn-primary Save
