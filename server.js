@@ -3,6 +3,7 @@ if (!process.env.PORT) {
   process.env.NODE_ENV = "dev"
 }
 
+
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
@@ -10,6 +11,9 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override')
+// require our mailgun dependencies
+const nodemailer = require('nodemailer');
+const mg = require('nodemailer-mailgun-transport');
 
 const app = express();
 
@@ -20,6 +24,19 @@ mongoose.connect('mongodb://localhost/local', {
   useCreateIndex: true,
   useFindAndModify: false
 });
+
+const auth = {
+  auth: {
+    api_key: process.env.MAILGUN_API_KEY,
+    domain: process.env.EMAIL_DOMAIN
+  }
+}
+
+const nodemailerMailgun = nodemailer.createTransport(mg(auth));
+
+
+// server.js
+app.locals.PUBLIC_STRIPE_API_KEY = process.env.PUBLIC_STRIPE_API_KEY
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -64,4 +81,12 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
+
 module.exports = app;
+// SEND EMAIL
+const user = {
+  email: 'YOUR@EMAIL.com',
+  name: 'Emily',
+  age: '43'
+};
+
