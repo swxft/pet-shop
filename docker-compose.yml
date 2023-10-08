@@ -1,0 +1,9 @@
+services:
+  pet:
+    build: .
+    environment:
+      - MONGO_DB_URL=mongodb://docker.for.mac.host.internal/local
+    env_file:
+      - .env
+    ports:
+      - 3000:3000
