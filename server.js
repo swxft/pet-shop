@@ -17,13 +17,25 @@ const mg = require('nodemailer-mailgun-transport');
 
 const app = express();
 
+const MONGO_DB_URL = process.env.MONGO_DB_URL || 'mongodb://localhost/local';
+
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/local', {
+mongoose.connect(MONGO_DB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: false
 });
+
+mongoose.connection.on('connected', function() {
+  console.log('Mongoose is connected');
+})
+
+
+mongoose.connection.on('error', function(err) {
+  console.log('Mongoose is throwing an error');
+  console.log(JSON.stringify(err));
+})
 
 const auth = {
   auth: {
@@ -90,3 +102,4 @@ const user = {
   age: '43'
 };
 
+console.log("The application is ready");
