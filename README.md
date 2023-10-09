@@ -1,5 +1,5 @@
 
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/:795438013)
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/:m795438013-f70ddc3a8022c67611e653b9)
 # Pet Shop
 live 👉 [pet-shop.dev.edencoded.me](http://pet-shop.dev.edencoded.me/)
 status page 👁️ [stats](https://stats.uptimerobot.com/9oXBgcR2nz)
