@@ -1,26 +1,20 @@
-# Pete's Pet Emporium!
 
-This is the starter project of the Pete's Pet tutorial.
+# Pet Shop
+live 👉 [pet-shop.dev.edencoded.me](http://pet-shop.dev.edencoded.me/pets/new)
+status page 👁️ [stats](https://stats.uptimerobot.com/9oXBgcR2nz)
 
-## Tasks
+## How To Run
 
-### Simple Search & Pagination
-Add a search bar in the navbar to search pets. Paginate the results.
+### 1. Clone The Repo
+`git clone https://github.com/swxft/pet-shop.git`
 
-### Validations
-Add validations to protect against unsanitary data getting into your db.
+### 2. Run via Docker
+- make sure you've manually turned Docker on locally
+- in the cli 👇
+`docker-compose up` 
 
-### Upload Images
-Upload pictures of pets from new and edit forms
+### 3. Use the App
+CRUD to your heart's content
 
-### Payment Gateways
-Buy pets using Stripe.
-
-### Send Emails
-Send an email when a pet is purchased.
-
-### Full Text Search
-Fuzzy and full-text search on multiple criteria
-
-### Responding to JSON
-Make your project into a full API
+### 4. Shut Docker Down
+`docker-compose down` 
