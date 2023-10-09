@@ -1,6 +1,6 @@
 
 # Pet Shop
-live 👉 [pet-shop.dev.edencoded.me](http://pet-shop.dev.edencoded.me/pets/new)
+live 👉 [pet-shop.dev.edencoded.me](http://pet-shop.dev.edencoded.me/)
 status page 👁️ [stats](https://stats.uptimerobot.com/9oXBgcR2nz)
 
 ## How To Run
