@@ -11,7 +11,7 @@ status page 👁️ [stats](https://stats.uptimerobot.com/9oXBgcR2nz)
 
 ### 2. Run via Docker
 - make sure you've manually turned Docker on locally
-- in the cli 👇
+- in the cli 👉
 `docker-compose up` 
 
 ### 3. Use the App
