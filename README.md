@@ -1,10 +1,11 @@
 
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/:795438013)
 # Pet Shop
 live 👉 [pet-shop.dev.edencoded.me](http://pet-shop.dev.edencoded.me/)
 status page 👁️ [stats](https://stats.uptimerobot.com/9oXBgcR2nz)
 
 ## How To Run
-
+🎽🎽🎽
 ### 1. Clone The Repo
 `git clone https://github.com/swxft/pet-shop.git`
 
